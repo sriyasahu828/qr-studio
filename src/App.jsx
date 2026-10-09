@@ -278,34 +278,42 @@ useEffect(() => {
 
   return (
     <div className="container">
-      <section className="hero">
+     
+<section className="hero">
   <div className="hero-left">
     <h1>QR Studio</h1>
 
     <h2>
-      Generate Professional QR Codes For
-      Anything
+      Generate Professional QR Codes For Anything
     </h2>
 
     <p>
-      Create custom QR codes for URLs,
-      Text, Email, Phone Numbers and Wi-Fi
-      with powerful customization and
-      instant downloads.
+      Create custom QR codes for URLs, Text, Email,
+      Phone Numbers and Wi-Fi with powerful
+      customization and instant downloads.
     </p>
 
-    <button className="hero-btn">
+    <button
+      className="hero-btn"
+      onClick={() =>
+        document.getElementById("qr-generator")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        })
+      }
+    >
       Start Creating
     </button>
   </div>
 
   <div className="hero-right">
     <img
-  src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=QRStudio"
-  alt="QR Preview"
-/>
+      src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=QRStudio"
+      alt="QR Studio preview"
+    />
   </div>
 </section>
+
 <section className="features">
 
   <div className="feature-card">

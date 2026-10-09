@@ -42,7 +42,7 @@ QR Studio is a modern QR Code Generator built with React and Vite. It allows use
 
 - Responsive Design:
   - Optimized for Desktop, Tablet, and Mobile devices.
-
+![QR Studio Homepage](screenshots/history.png.png)
 ## Tech Stack
 
 ### Frontend
